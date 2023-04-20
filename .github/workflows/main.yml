@@ -30,7 +30,7 @@ jobs:
     - name: Build Docker image
       uses: docker/build-push-action@v2
       with:
-        context: ../
+        context: .
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/high-scores-api:latest
       env:
